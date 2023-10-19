@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,23 +15,82 @@
 
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <div class="container-page">
-    <section class="section-quiz-cards">
-      <img src="./assets/feedback.svg" alt="Feedback Image">
-      <img src="./assets/feedback-hover.svg" alt="">
-      <img src="./assets/success.svg" alt="Success Image">
-      <img src="./assets/adventure.svg" alt="">
-      <img src="./assets/imagination.svg" alt="">
-      <img src="./assets/correct.svg" alt="">
-      <img src="./assets/incorrect.svg" alt="">
+    <section class="quiz-cards">
 
-      <i class="iconoir-cancel"></i>
-      <i class="iconoir-check"></i>
-      <i class="iconoir-nav-arrow-right"></i>
+      <header>
+        <h1>&#128075;Quiz<span>Time</span></h1>
+        <div class="total-hits">
+          
+            <svg class="check-icon" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
 
-      <h1>👋 Quiz<span>Time</span></h1>
+          <span class="number-hits">0</span>
+        </div>
+      </header>
+
+      <!-- Implementar pelo JavaScript a qual card estiver correto
+        <img src="./assets/correct.svg" alt="Correct Icon"> -->
+      <main>
+        <h2>
+          Qual era o objetivo da personagem?
+        </h2>
+        <section class="cards">
+
+          <section class="card card1">
+            <div class="feedback-field">
+
+            </div>
+            <section class="illustration success">
+              <img src="./assets/success.svg" alt="Success Illustration">
+            </section>
+
+            <p class="alternative">jsjsnsbbs</p>
+          </section>
+          <section class="card card2">
+            <div class="feedback-field">
+            </div>
+            <section class="illustration imagination">
+              <img src="./assets/adventure.svg" alt="Imagination Illustration">
+            </section>
+            <p class="alternative">jahab bsbshsh shsbbsb hjsjs sjsjjs jsjsjjs usjjsj usjjsns</p>
+          </section>
+          <section class="card card3">
+            <div class="feedback-field">
+            </div>
+
+            <section class="illustration adventure">
+
+              <img src="./assets/success.svg" alt="Adventure Illustration">
+
+            </section>
+
+            <p class="alternative"></p>
+
+          </section>
+        </section>
+      </main>
+      <footer>
+
+        <section class="level-infos">
+
+          <h4 class="level" value="0"></h4>
+          <span class="split-level-infos">/</span>
+          <span class="total-levels">5</span>
+
+        </section>
+
+        <section class="skip-level">
+          <i class="iconoir-nav-arrow-right"></i>
+        </section>
+      </footer>
+
     </section>
   </div>
 </body>
+
 </html>
