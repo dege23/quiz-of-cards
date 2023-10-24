@@ -1,0 +1,36 @@
+.quiz-cards header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz-cards header h1 {
+  font-size: var(--heading1);
+  font-weight: 800;
+}
+
+.quiz-cards header h1 span {
+  font-size: var(--heading1);
+  font-weight: 500;
+}
+
+.quiz-cards header .total-hits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--color-green-light);
+  border: 1px solid var(--color-green-light);
+  border-radius: 8px;
+  padding: 12px 20px;
+  background-color: var(--color-grey5);
+}
+
+.quiz-cards header .total-hits .number-hits {
+  color: var(--color-green-light);
+}
+
+.quiz-cards header .total-hits .check-icon {
+  width: 24px;
+  height: 24px;
+}

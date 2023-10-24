@@ -6,14 +6,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz de Cards</title>
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+  <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -23,30 +27,29 @@
       <header>
         <h1>&#128075;Quiz<span>Time</span></h1>
         <div class="total-hits">
-          
-            <svg class="check-icon" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+
+          <svg class="check-icon" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
 
           <span class="number-hits">0</span>
         </div>
       </header>
 
       <!-- Implementar pelo JavaScript a qual card estiver correto
-        <img src="./assets/correct.svg" alt="Correct Icon"> -->
+        <img src="assets/images/adventure.svg/correct.svg" alt="Correct Icon"> -->
       <main>
         <h2>
           Qual era o objetivo da personagem?
         </h2>
-        <section class="cards">
+        <nav class="cards">
 
           <section class="card card1">
             <div class="feedback-field">
 
             </div>
             <section class="illustration success">
-              <img src="./assets/success.svg" alt="Success Illustration">
+              <img src="assets/images/success.svg" alt="Success Illustration">
             </section>
 
             <p class="alternative">jsjsnsbbs</p>
@@ -55,7 +58,7 @@
             <div class="feedback-field">
             </div>
             <section class="illustration imagination">
-              <img src="./assets/adventure.svg" alt="Imagination Illustration">
+              <img src="assets/images/imagination.svg" alt="Imagination Illustration">
             </section>
             <p class="alternative">jahab bsbshsh shsbbsb hjsjs sjsjjs jsjsjjs usjjsj usjjsns</p>
           </section>
@@ -65,27 +68,34 @@
 
             <section class="illustration adventure">
 
-              <img src="./assets/success.svg" alt="Adventure Illustration">
+              <img src="assets/images/adventure.svg" alt="Adventure Illustration">
 
             </section>
 
             <p class="alternative"></p>
 
           </section>
-        </section>
+        </nav>
       </main>
       <footer>
 
         <section class="level-infos">
 
-          <h4 class="level" value="0"></h4>
+          <span class="level" value=""></span>
           <span class="split-level-infos">/</span>
           <span class="total-levels">5</span>
 
         </section>
 
         <section class="skip-level">
-          <i class="iconoir-nav-arrow-right"></i>
+          <svg 
+          stroke-width="1.5" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg">
+            <path 
+            d="M9 6L15 12L9 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </section>
       </footer>
 
