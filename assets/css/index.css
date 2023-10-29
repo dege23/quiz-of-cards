@@ -25,11 +25,11 @@
   --quests: 12px;
 }
 
-body{
-  background: linear-gradient(180deg, #996DFF, #633BBC);
+body {
+  background: linear-gradient(180deg, #996dff, #633bbc);
 }
 
-body *:not(svg, svg *){
+body *:not(svg, svg *) {
   color: var(--color-grey1);
 }
 
@@ -40,9 +40,11 @@ body *:not(svg, svg *){
 }
 
 .quiz-cards {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   width: max-content;
   height: max-content;
   max-width: 100%;
@@ -51,4 +53,44 @@ body *:not(svg, svg *){
   padding: 69px 138px;
   gap: 69px;
   background-color: var(--color-grey6);
+}
+
+.wrapper-end-game {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.wrapper-end-game .end-game-msg {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 32px;
+  gap: 42px;
+  background-color: #3f3f3f;
+}
+
+.wrapper-end-game .end-game-msg .reset-game {
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-size: 1.2rem;
+  background-color: rgb(30, 150, 255);
+}
+
+.wrapper-end-game .end-game-msg .reset-game:hover {
+  background-color: rgb(2, 119, 221);
+}
+
+.wrapper-end-game.hidden {
+  display: none;
 }

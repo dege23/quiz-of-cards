@@ -27,6 +27,7 @@
 }
 
 .quiz-cards header .total-hits .number-hits {
+  font-size: var(--score);
   color: var(--color-green-light);
 }
 

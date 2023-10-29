@@ -13,6 +13,10 @@
     background-color: var(--color-grey3);
   }
 
+  .quiz-cards footer .skip-level.active{
+    background-color: var(--color-green-light);
+  }
+
   .quiz-cards footer .skip-level svg{
     width: 24px;
     height: 24px;
